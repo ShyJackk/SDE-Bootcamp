@@ -1,0 +1,28 @@
+body {
+  background-color: pink;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  place-content: center;
+}
+
+button {
+  width: 12rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.75rem;
+  background-color: rgb(173, 24, 96);
+  color: #fff;
+  cursor: pointer;
+}
+
+.hover:hover {
+  border-color: rgb(253, 1, 102);
+  background: rgb(0, 0, 0);
+  color: rgb(253, 1, 102);
+  font-weight: 600;
+  transition: all 0.5s ease-out;
+}
