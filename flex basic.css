@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.sidebar {
+    flex-basis: 200px;   /* Fixed width of 200px for the sidebar */
+    flex-grow: 0;       /* Sidebar should not grow */
+    flex-shrink: 0;     /* Sidebar should not shrink */
+    background-color: #e0e0e0;
+    padding: 16px;
+}
+
+.content {
+    flex-basis: 0;      /* Starting point of 0 for main content */
+    flex-grow: 1;       /* Content should grow to occupy available space */
+    flex-shrink: 1;     /* Content can shrink if there's not enough space */
+    background-color: #d5f4e6;
+    padding: 16px;
+}
