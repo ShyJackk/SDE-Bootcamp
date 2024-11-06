@@ -1,0 +1,40 @@
+1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.grid-container {
+  display: grid;
+  min-height: 60vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  margin-top: 5rem;
+  gap: 0.5rem;
+}
+
+.grid-item {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: cornflowerblue;
+}
+
+.item-4, .item-6 {
+  grid-row: 2/4;
+}
+
+.item-4 {
+  grid-column: 1/2;
+}
+
+.item-5 {
+  grid-row: span 2;
+}
+
+.item-6 {
+  grid-column: 3/4;
+}
